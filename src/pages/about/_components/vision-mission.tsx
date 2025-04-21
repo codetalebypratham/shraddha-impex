@@ -1,4 +1,3 @@
-// components/VisionMission/Vision.tsx
 import React from "react";
 import { CheckSquare, LucideIcon, Settings, Users } from "lucide-react";
 import HeroSection from "@/components/cards/hero-section";

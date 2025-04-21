@@ -1,78 +1,8 @@
 import SectionWrapper from "@/components/cards/section-wrapper";
-import { Card, CardContent } from "@/components/ui/card";
 
-import {
-  UserRound,
-  Lightbulb,
-  Target,
-  Building2,
-  Handshake,
-  Search,
-  BarChart3,
-  Globe2,
-} from "lucide-react";
-import Timeline from "./_components/timeline";
 import VisionMission from "./_components/vision-mission";
 import LicenseSection from "./_components/licence";
 
-const timelineData = [
-  {
-    year: "2020",
-    title: "Company Founder",
-    description: "Sed ut ante mollis, commodo eros vitae.",
-    icon: UserRound,
-    color: "bg-orange-500",
-  },
-  {
-    year: "2021",
-    title: "Ideas & Organization",
-    description: "Sed ut ante mollis, commodo eros vitae.",
-    icon: Lightbulb,
-    color: "bg-yellow-400",
-  },
-  {
-    year: "2022",
-    title: "Company Executive",
-    description: "Sed ut ante mollis, commodo eros vitae.",
-    icon: Target,
-    color: "bg-yellow-400",
-  },
-  {
-    year: "2023",
-    title: "Regional Office Opened",
-    description: "Sed ut ante mollis, commodo eros vitae.",
-    icon: Building2,
-    color: "bg-sky-400",
-  },
-  {
-    year: "2024",
-    title: "Sustaining Partnership",
-    description: "Sed ut ante mollis, commodo eros vitae.",
-    icon: Handshake,
-    color: "bg-green-500",
-  },
-  {
-    year: "2025",
-    title: "Data Research",
-    description: "Sed ut ante mollis, commodo eros vitae.",
-    icon: Search,
-    color: "bg-green-500",
-  },
-  {
-    year: "2026",
-    title: "Significant Growth",
-    description: "Sed ut ante mollis, commodo eros vitae.",
-    icon: BarChart3,
-    color: "bg-rose-500",
-  },
-  {
-    year: "2027",
-    title: "Enlarging Globally",
-    description: "Sed ut ante mollis, commodo eros vitae.",
-    icon: Globe2,
-    color: "bg-red-500",
-  },
-];
 const AboutPage = () => {
   return (
     <div className="space-y-8 px-4">
@@ -102,9 +32,6 @@ const AboutPage = () => {
           </div>
         </div>
       </SectionWrapper>
-      {/* <SectionWrapper bg>
-        <Timeline />
-      </SectionWrapper> */}
       <SectionWrapper bg>
         <VisionMission />
       </SectionWrapper>

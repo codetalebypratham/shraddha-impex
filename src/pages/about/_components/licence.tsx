@@ -1,4 +1,3 @@
-// components/Licenses/LicenseItem.tsx
 import HeroSection from "@/components/cards/hero-section";
 import React from "react";
 
