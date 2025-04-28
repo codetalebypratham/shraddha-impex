@@ -6,14 +6,15 @@ import NewsletterSection from "./_components/news-latter";
 import { plasticProducts } from "@/data/prduct-data";
 import ProductCard from "@/components/cards/product-card";
 import { Link } from "react-router-dom";
+import Stats from "./_components/stats";
 
 const HomePage = () => {
   return (
     <div className="space-y-12 md:space-y-20">
       <MainCarousel />
       <SectionWrapper
-        heroTitle="lorem"
-        heroDescription="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis recusandae inventore ipsa et, nihil, ipsam quod cupiditate error eaque nulla cum alias atque, qui facere!"
+        heroTitle="Products"
+        heroDescription="We meet the critical input needs of industries, serving leading players across key sectors with a full range of products and services."
         bg
       >
         <div className="space-y-4 md:space-y-6">
@@ -29,25 +30,11 @@ const HomePage = () => {
           </div>
         </div>
       </SectionWrapper>
-      <SectionWrapper
-        heroTitle="grid"
-        heroDescription="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis recusandae inventore ipsa et, nihil, ipsam quod cupiditate error eaque nulla cum alias atque, qui facere!"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-3 md:p-4 grid-flow-dense">
-          {[...new Array(4)].map((_, index) => (
-            <div
-              className="w-full min-h-20 h-fit bg-accent rounded-md"
-              key={index}
-            ></div>
-          ))}
-        </div>
+      <SectionWrapper heroTitle="Our Statistics">
+        <Stats />
       </SectionWrapper>
 
-      <SectionWrapper
-        heroTitle="our partners"
-        heroDescription="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis recusandae inventore ipsa et, nihil, ipsam quod cupiditate error eaque nulla cum alias atque, qui facere!"
-        bg
-      >
+      <SectionWrapper heroTitle="Our Prior customers" bg>
         <OurPartners />
       </SectionWrapper>
       <NewsletterSection />

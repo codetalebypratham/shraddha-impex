@@ -86,8 +86,8 @@ export default function FlippingCard() {
   }, []);
 
   return (
-    <div className="px-4 w-full h-fit mt-16 lg:px-20">
-      <div className="aspect-video w-full md:h-[400px] lg:h-[650px] mx-auto relative perspective">
+    <div className="px-4 sm:px-10 w-full h-fit mt-16 lg:px-20">
+      <div className="aspect-video w-full md:h-[400px] lg:h-[650px] mx-auto relative perspective-distant">
         <div
           className="w-full h-full border rounded-lg bg-accent shadow-xl transition-transform duration-700"
           style={{

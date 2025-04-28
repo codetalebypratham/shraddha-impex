@@ -1,6 +1,5 @@
 import PartnerCard from "@/components/cards/partner-card";
 import { partners } from "@/data/partners";
-
 const PartnerGrid = () => {
   return (
     <section className="px-4">
@@ -18,15 +17,21 @@ const PartnerGrid = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-left">
-          {partners.map((partner, i) => (
-            <PartnerCard
-              key={i}
-              name={partner.name}
-              location={partner.location}
-            />
-          ))}
-        </div>
+        {/* Dynamically render the categories */}
+        {partners.map((categoryData, index) => (
+          <div className="mb-10" key={index}>
+            <h3 className="text-xl font-bold mb-4">{categoryData.category}</h3>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-left">
+              {categoryData.partners.map((partner, i) => (
+                <PartnerCard
+                  key={i}
+                  name={partner.name}
+                  location={partner.location}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

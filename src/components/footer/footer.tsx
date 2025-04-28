@@ -34,18 +34,20 @@ const FooterContact = () => (
         <div className="text-foreground">
           <strong className="text-muted-foreground">Address:</strong>
           <br />
-          Shiv Sagar Estate, “D” Block, 2nd floor,
+          103, Chitrarath Building,
           <br />
-          Dr. Annie Besant Road, Worli,
+          Opp. Hotel President,
           <br />
-          Mumbai – 400018
+          Off. C. G. Road, Navrangpura,
+          <br />
+          AHMEDABAD - 380 009
         </div>
       </li>
       <li className="flex items-center gap-3 border-t border-accent pt-4">
         <Phone className="text-muted-foreground " />
         <span className="text-foreground">
-          <strong className="text-muted-foreground ">Phone:</strong> 022
-          45747600 – 022 45747601
+          <strong className="text-muted-foreground ">Phone:</strong> 079 2656
+          2619
         </span>
       </li>
       <li className="flex items-center gap-3 border-t border-accent pt-4">
@@ -56,7 +58,7 @@ const FooterContact = () => (
             href="mailto:info@rsgchemicals.com"
             className="text-foreground hover:underline"
           >
-            info@sichemicals.com
+            shraddhagroup@gmail.com
           </a>
         </span>
       </li>
@@ -67,7 +69,7 @@ const FooterContact = () => (
 const FooterBottom = () => (
   <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center text-sm md:text-base text-gray-400 pt-4">
     <p>
-      2025 © Ramniklal S. Gosalia & Co. (RSG).{" "}
+      2025 © Rajeshbhai Doshi (SI).{" "}
       <span className="text-foreground">All Rights Reserved.</span>
     </p>
   </div>
@@ -75,11 +77,11 @@ const FooterBottom = () => (
 
 const FooterLogo = () => (
   <div className="text-sm md:text-base">
-    <img src="/logo.png" alt="SI Logo" className="mb-4 w-48" />
+    <img src="/logo.png" alt="SHRADDHA IMPEX" className="mb-4 w-48" />
     <p className="text-muted-foreground text-sm leading-relaxed">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eaque
-      optio facere quod error nam odio, adipisci doloribus maiores sequi ea
-      praesentium amet, ullam veritatis!
+      Shraddha Impex, with 30+ years in plastic raw materials trading,
+      specializes in granules and masterbatches for packaging and automotive
+      sectors, achieving ₹100–150 crores turnover through internal resources.
     </p>
   </div>
 );

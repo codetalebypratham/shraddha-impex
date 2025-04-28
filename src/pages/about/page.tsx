@@ -12,22 +12,23 @@ const AboutPage = () => {
           <div className="space-y-4 text-center max-w-lg xl:max-w-xl">
             <div className="text-lg md:text-xl">Lorem, ipsum dolor.</div>
             <div className="text-sm md:text-base text-muted-foreground text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nemo
-              consequatur possimus vitae enim, accusantium rerum doloremque,
-              illum neque quaerat quasi deserunt eius a qui ut similique quod
-              atque? Repudiandae itaque numquam iure modi eaque unde nesciunt
-              culpa fugit veniam debitis, eos totam! Debitis error quam officia
-              illo veniam, obcaecati modi laborum velit! Molestias, dolorem hic
-              pariatur laudantium consequuntur neque quo perspiciatis dolore,
-              magnam minus rem exercitationem, soluta harum nisi fuga ab rerum!
-              Totam, quae perferendis libero? Debitis vero itaque dolorum id
-              adipisci doloribus esse ducimus repellendus laudantium. Sed,
-              similique? Quae ducimus, at nemo fugit magnam illum rerum a esse
-              aperiam ea doloribus nobis, nostrum aliquam deleniti possimus qui
-              sint recusandae voluptates eveniet praesentium sapiente? Suscipit
-              expedita sed omnis officia voluptas rem itaque assumenda corporis
-              cum at ab hic animi accusamus quia a, earum, quod ullam. Vero,
-              delectus eos tempora labore pariatur omnis?
+              Shraddha Impex is a proprietorship concern led by Shri Rajesh H.
+              Doshi, a Commerce graduate with over 30 years of experience in
+              trading plastic raw materials such as LDPE, HDPE, LLDPE,
+              Polypropylene, and Calcium Carbonate. The company specializes in
+              importing and marketing high-quality plastic granules and
+              masterbatches, catering to industries like packaging, industrial
+              fabrics, and automotive sectors. Shraddha Impex has successfully
+              achieved an impressive turnover of ₹100–150 crores, funded solely
+              through internal resources. The firm operates mainly through high
+              seas sales, sourcing products from Singapore, Malaysia, the Middle
+              East, and reputed suppliers like ExxonMobil and SABIC. It
+              maintains a strong client base in Gujarat and beyond, with direct
+              distribution to major industries. Associated firms like Shraddha
+              Polymers and Shraddha Industries further strengthen its market
+              presence. The company’s success is built on deep industry
+              knowledge, a wide distribution network, and a consistent
+              commitment to quality and customer satisfaction.
             </div>
           </div>
         </div>

@@ -8,12 +8,14 @@ import {
   MainLayout,
   ProductPage,
 } from "./routes";
+import ScrollToTop from "@/components/scroll-to-top";
 
 export const router = createBrowserRouter([
   {
     element: (
       <Suspense fallback={<div>loading...</div>}>
         <Outlet />
+        <ScrollToTop />
       </Suspense>
     ),
     children: [

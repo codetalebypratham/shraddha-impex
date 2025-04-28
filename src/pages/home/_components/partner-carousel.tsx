@@ -34,7 +34,7 @@ const OurPartners = () => {
           scrollAmount = 0;
           container.scrollLeft = 0;
         }
-      }, 10); // every 10ms = ~60fps
+      }, 10);
     };
 
     startScrolling();
@@ -44,22 +44,34 @@ const OurPartners = () => {
     };
   }, [isTabVisible, isHovering]);
 
-  const items = Array.from({ length: 5 });
+  const partners = [
+    "MMT Polypack",
+    "IDMC Limited",
+    "Trufill Polymers",
+    "Shreya India Private Limited - Dadra",
+    "Sun Plast",
+    "EPC Industries Limited",
+    "Shraddha Industries",
+    "Shri Khemisathi Plastics Private Limited",
+    "Shrinath Plastopack",
+    "Raju Engineering",
+    "Veer Plastic Pvt. Ltd.",
+  ];
 
   return (
-    <div className="w-full overflow-hidden py-6 ">
+    <div className="w-full overflow-hidden py-6">
       <div
         ref={containerRef}
         className="flex gap-6 overflow-x-hidden whitespace-nowrap no-scrollbar transition-all"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
-        {[...items, ...items].map((_, index) => (
+        {[...partners, ...partners].map((partner, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-48 h-28 bg-accent rounded-xl flex items-center justify-center text-lg font-medium shadow"
+            className="flex-shrink-0 w-48 h-28 bg-accent rounded-xl flex items-center justify-center text-center px-2 text-sm font-medium shadow text-wrap"
           >
-            Partner {(index % items.length) + 1}
+            {partner}
           </div>
         ))}
       </div>
