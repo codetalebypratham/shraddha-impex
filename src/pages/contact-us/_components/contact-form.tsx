@@ -15,7 +15,6 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-// Form schema
 const formSchema = z.object({
   name: z.string().min(1, "Name is required"),
   email: z.string().email("Enter a valid email"),
@@ -42,9 +41,14 @@ const ContactForm = () => {
   const scriptURL = import.meta.env.VITE_WEB_APP;
   const onSubmit = async (data: ContactFormValues) => {
     try {
-      const response = await axios.post(scriptURL, data, {
+      const params = new URLSearchParams({
+        ...data,
+        origin: window.location.origin,
+      });
+
+      const response = await axios.post(scriptURL, params, {
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
       });
 
