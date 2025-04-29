@@ -14,6 +14,7 @@ import { User, Mail, Phone, Globe, Building } from "lucide-react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -46,18 +47,17 @@ const ContactForm = () => {
         origin: window.location.origin,
       });
 
-      const response = await axios.post(scriptURL, params, {
+      await axios.post(scriptURL, params, {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
       });
 
-      console.log("Form submitted:", response.data);
-      alert("Message submitted successfully!");
+      toast.success("Message submitted successfully!");
       form.reset();
     } catch (error) {
       console.error("Submission error:", error);
-      alert("There was an error submitting the form.");
+      toast.error("There was an error submitting the form.");
     }
   };
 
